@@ -6,6 +6,7 @@ const server = http.createServer((req,res)=>{
     fs.appendFile('teste.txt','Curso de Node - estudando NODE',(err)=>{
         if(err){throw err};
         console.log('Arquivo Criado');
+        res.end();
     });
 });
 
